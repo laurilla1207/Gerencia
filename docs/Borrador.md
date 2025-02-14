@@ -36,5 +36,8 @@ Tras la evaluación de estas opciones, se determinó que **CRISP-DM** es la meto
 - **Integración con tecnologías avanzadas:** La metodología se alinea con el uso de **YOLO v11**, favoreciendo la organización del flujo de trabajo en el desarrollo del modelo.
 
 ### Cronograma de trabajo
+ ![](https://drive.google.com/uc?export=view&id=1Ol7RH8Jm3Xs90ixwyDtzuTP0UGiBjZwH)
+
+Para ver en tiempo real: 
 
 [![Notion](https://img.shields.io/badge/Notion-Cronograma-blue?logo=notion)](https://statuesque-stay-3a5.notion.site/Cronograma-de-Trabajo-19aa98e9a80580daa2e9d243a09fdbe9)
