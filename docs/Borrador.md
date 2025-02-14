@@ -37,4 +37,4 @@ Tras la evaluación de estas opciones, se determinó que **CRISP-DM** es la meto
 
 ### Cronograma de trabajo
 
-[Detección de EPP's](Cronograma%20de%20Trabajo%2019aa98e9a80580daa2e9d243a09fdbe9/Deteccio%CC%81n%20de%20EPP's%2019aa98e9a8058002acfceecdd792fe29.csv](https://statuesque-stay-3a5.notion.site/Cronograma-de-Trabajo-19aa98e9a80580daa2e9d243a09fdbe9?pvs=4)
+[![Notion](https://img.shields.io/badge/Notion-Cronograma-blue?logo=notion)](https://statuesque-stay-3a5.notion.site/Cronograma-de-Trabajo-19aa98e9a80580daa2e9d243a09fdbe9)
