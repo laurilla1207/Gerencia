@@ -1,6 +1,5 @@
 # 📜 Detección de Empleados sin Casco en Áreas de Trabajo
 
-## Objetivos
 # Objetivo General
 Desarrollar un modelo de reconocimiento de imágenes que identifique automaticamente empleados que no usan casco de seguridad en áreas de trabajo.
 # Objetivos Específicos
