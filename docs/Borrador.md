@@ -35,3 +35,7 @@ Tras la evaluación de estas opciones, se determinó que **CRISP-DM** es la meto
 - **Apropiado para visión por computadora:** Dado que el proyecto se centra en la detección de objetos mediante deep learning, es fundamental contar con una metodología que contemple una fase robusta de **preprocesamiento de datos**.
 - **Iteración y mejora continua:** CRISP-DM facilita un enfoque progresivo, permitiendo realizar ajustes y optimizar el modelo con base en los resultados obtenidos.
 - **Integración con tecnologías avanzadas:** La metodología se alinea con el uso de **YOLO v11**, favoreciendo la organización del flujo de trabajo en el desarrollo del modelo.
+
+### Cronograma de trabajo
+
+[Detección de EPP's](Cronograma%20de%20Trabajo%2019aa98e9a80580daa2e9d243a09fdbe9/Deteccio%CC%81n%20de%20EPP's%2019aa98e9a8058002acfceecdd792fe29.csv)
