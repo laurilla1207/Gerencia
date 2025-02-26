@@ -46,6 +46,6 @@ Para ver en tiempo real:
 
 [![Notion](https://img.shields.io/badge/Notion-Cronograma-blue?logo=notion)](https://statuesque-stay-3a5.notion.site/Cronograma-de-Trabajo-19aa98e9a80580daa2e9d243a09fdbe9)
 
-### Metodología
+### Metodología (OSMN)
  ![](https://drive.google.com/uc?export=view&id=1Wsx3SyqXKixMFhwTxHX5zYhziS57hrhY)
 
