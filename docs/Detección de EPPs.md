@@ -49,7 +49,7 @@ Para ver en tiempo real:
 ### Metodología (OSMN)
  ![](https://drive.google.com/uc?export=view&id=1Wsx3SyqXKixMFhwTxHX5zYhziS57hrhY)
 
-### Análisi de riesgos
+### Análisis de riesgos
 
 | **ID** | **Riesgo** | **Probabilidad** | **Impacto** | **Estrategia de Mitigación** |
 |--------|------------|-----------------|------------|--------------------------|
