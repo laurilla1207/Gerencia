@@ -25,15 +25,19 @@ Para el desarrollo de este proyecto, se llevó a cabo una evaluación de distint
 | **CRISP-DM** | Proceso estructurado en seis fases: comprensión del negocio, comprensión de los datos, preparación de los datos, modelado, evaluación y despliegue. | Flexible, iterativa y ampliamente utilizada en la industria. | Puede ser generalista en algunos casos. |
 | **KDD** | Enfocada en la extracción de conocimiento a partir de grandes volúmenes de datos. | Muy útil en análisis exploratorios. | No está optimizada específicamente para visión por computadora. |
 | **TDSP** | Metodología de Microsoft diseñada para la implementación colaborativa en ciencia de datos. | Ideal para grandes equipos y entornos empresariales. | Requiere herramientas y ecosistemas de Azure. |
+| OSEMN | Se basa en cinco fases: Obtener, Scrub (limpiar), Explorar, Modelar y iNterpretar. | Práctica, sencilla y bien adaptada a proyectos de análisis de datos. | Puede carecer de un enfoque específico en despliegue y mantenimiento. |
+
 
 ### Justificación Basada en la Naturaleza del Proyecto
 
-Tras la evaluación de estas opciones, se determinó que **CRISP-DM** es la metodología más adecuada para la ejecución del proyecto, ya que proporciona un marco sólido y adaptable a sus necesidades. Entre sus principales ventajas se destacan:
+Tras la evaluación de estas opciones, se determinó que OSEMN es la metodología más adecuada para la ejecución del proyecto, ya que proporciona un enfoque práctico y orientado al análisis de datos. Entre sus principales ventajas se destacan:
 
-- **Orden y claridad en cada fase:** Permite estructurar el desarrollo de manera eficiente, desde la recopilación de datos hasta la implementación del modelo de detección.
-- **Apropiado para visión por computadora:** Dado que el proyecto se centra en la detección de objetos mediante deep learning, es fundamental contar con una metodología que contemple una fase robusta de **preprocesamiento de datos**.
-- **Iteración y mejora continua:** CRISP-DM facilita un enfoque progresivo, permitiendo realizar ajustes y optimizar el modelo con base en los resultados obtenidos.
-- **Integración con tecnologías avanzadas:** La metodología se alinea con el uso de **YOLO v11**, favoreciendo la organización del flujo de trabajo en el desarrollo del modelo.
+- **Estructura clara y enfocada en datos**: OSEMN permite seguir un flujo lógico desde la obtención de datos hasta su interpretación, facilitando la organización del trabajo.
+- **Adecuado para visión por computadora**: La fase de limpieza y exploración de datos es crucial para proyectos de deep learning, asegurando datos de alta calidad antes del modelado.
+- **Iteración y mejora continua**: Permite refinar el modelo mediante análisis y ajustes progresivos.
+- **Flexibilidad y compatibilidad con tecnologías avanzadas**: Se adapta bien al uso de herramientas como YOLO v11, optimizando la gestión del flujo de trabajo en la detección de objetos.
+
+La aplicación de OSEMN garantizará un desarrollo estructurado y eficiente del modelo de detección, maximizando la calidad de los resultados obtenidos.
 
 ### Cronograma de trabajo
  ![](https://drive.google.com/uc?export=view&id=1Ol7RH8Jm3Xs90ixwyDtzuTP0UGiBjZwH)
