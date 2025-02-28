@@ -59,3 +59,16 @@ Para ver en tiempo real:
 | R4 | Alto tiempo de inferencia en dispositivos de baja potencia | Media | Media | Optimizar el modelo con técnicas de cuantización y reducir tamaño de red. |
 | R5 | Detección errónea en entornos con objetos similares a cascos | Alta | Media | Refinar etiquetas del dataset y mejorar el postprocesamiento del modelo. |
 
+### Análisis de datos y Resultados
+
+Después de realizar el entrenamiento y validación del modelo, pudimos obtener los siguientes resultados: 
+
+# 📊 Resultados de Evaluación del Modelo
+
+| Métrica            | Valor   |
+|--------------------|--------:|
+| **Precisión**     | 0.9363  |
+| **Recall**        | 0.9155  |
+| **F1-score**      | 0.9255  |
+| **mAP (IoU@0.5)** | 0.6611  |
+| **mAP (IoU@0.5:0.95)** | 0.6547 |
