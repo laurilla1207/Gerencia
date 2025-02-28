@@ -40,7 +40,7 @@ Tras la evaluación de estas opciones, se determinó que OSEMN es la metodologí
 La aplicación de OSEMN garantizará un desarrollo estructurado y eficiente del modelo de detección, maximizando la calidad de los resultados obtenidos.
 
 ### Cronograma de trabajo
- ![](https://drive.google.com/uc?export=view&id=1nRVVNSVQ5mLuwlLutRuhbhNtRKhyctBF)
+ ![](https://drive.google.com/uc?export=view&id=1sYjFE7jnxTS8x-xafkRviiQBGHDkv0hc)
 
 Para ver en tiempo real: 
 
