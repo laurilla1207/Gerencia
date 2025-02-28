@@ -75,3 +75,12 @@ Después de realizar el entrenamiento y validación del modelo, pudimos obtener 
 - **Recall:** (Sensibilidad) un 91.55% de las instancias reales positivas fueron correctamente identificadas.
 - **F1-score:** F1-score de 92.55% indica un buen equilibrio entre precisión y recall.
 - **mAP (Mean Average Precision)**: mAP de ~65% indica que hay margen de mejora en la detección y localización de objetos.
+
+### 📊 Conclusiones y Recomendaciones
+El modelo propuesto demuestra su utilidad en la detección automatizada de empleados sin casco, lo que se traduce en un avance para la seguridad laboral y prevención de accidentes. Los resultados obtenidos, con una F1-score por encima del 90%, validan el enfoque adoptado.
+No obstante, es importante mencionar ciertas áreas de oportunidad:
+•	Ampliación del Dataset: Recoger más imágenes y situaciones distintas (entornos nocturnos, diferentes tipos de casco, industrias variadas) para robustecer la red.
+•	Optimización del Modelo: Evaluar la implementación de versiones más ligeras de YOLO o aplicar técnicas como pruning y cuantización, especialmente para la ejecución en dispositivos de bajo rendimiento.
+•	Refinamiento en el Postprocesamiento: Explorar algoritmos avanzados de filtrado para reducir falsos positivos, particularmente en entornos llenos de objetos similares al casco.
+En conjunto, este proyecto sienta bases sólidas para futuros desarrollos en la intersección de la seguridad industrial y la ciencia de datos. Con la integración de analíticas más complejas y la posibilidad de desplegar el modelo en sistemas de videovigilancia en tiempo real, se abre la puerta a soluciones escalables que contribuyan al bienestar de los trabajadores y a la prevención de riesgos en el entorno laboral.
+
