@@ -59,11 +59,9 @@ Para ver en tiempo real:
 | R4 | Alto tiempo de inferencia en dispositivos de baja potencia | Media | Media | Optimizar el modelo con técnicas de cuantización y reducir tamaño de red. |
 | R5 | Detección errónea en entornos con objetos similares a cascos | Alta | Media | Refinar etiquetas del dataset y mejorar el postprocesamiento del modelo. |
 
-### Análisis de datos y Resultados
+### 📊 Análisis de datos y Resultados
 
 Después de realizar el entrenamiento y validación del modelo, pudimos obtener los siguientes resultados: 
-
-# 📊 Resultados de Evaluación del Modelo
 
 | Métrica            | Valor   |
 |--------------------|--------:|
@@ -72,3 +70,8 @@ Después de realizar el entrenamiento y validación del modelo, pudimos obtener 
 | **F1-score**      | 0.9255  |
 | **mAP (IoU@0.5)** | 0.6611  |
 | **mAP (IoU@0.5:0.95)** | 0.6547 |
+
+- **Precisión:** Un 93.63% de los casos clasificados como positivos realmente pertenecen a la clase correcta.
+- **Recall:** (Sensibilidad) un 91.55% de las instancias reales positivas fueron correctamente identificadas.
+- **F1-score:** F1-score de 92.55% indica un buen equilibrio entre precisión y recall.
+- **mAP (Mean Average Precision)**: mAP de ~65% indica que hay margen de mejora en la detección y localización de objetos.
