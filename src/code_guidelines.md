@@ -1,12 +1,13 @@
 # 🔧 Código Fuente del Proyecto
 ## Descripción
-Esta carpeta contiene el código fuente del proyecto, incluyendo scripts de preprocesamiento, modelado y despliegue.
+Esta carpeta contiene el código fuente del proyecto elaborado en Python.
 
 # 📌 **Código para Entrenamiento y Evaluación del Modelo YOLOv11**
 
 Este script descarga y prepara los datos, entrena el modelo YOLOv11 y evalúa su desempeño.
 
----
+
+```python
 #Instalación de Dependencias
 !pip install gdown torch ultralytics
 
