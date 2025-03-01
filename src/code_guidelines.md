@@ -8,14 +8,10 @@ Este script descarga y prepara los datos, entrena el modelo YOLOv11 y evalúa su
 
 ---
 
-## 🔹 **1. Instalación de Dependencias**
-```python
+#Instalación de Dependencias
 !pip install gdown torch ultralytics
 
-🔹 2. Importar Librerías
-python
-Copy
-Edit
+#Importar Librerías
 import gdown
 import os
 import torch
@@ -28,26 +24,22 @@ from ultralytics import YOLO
 from IPython.display import display
 from PIL import Image
 from sklearn.metrics import roc_curve, auc
-🔹 3. Descarga y Preparación de Datos
-python
-Copy
-Edit
+
+#Descarga y Preparación de Datos
 file_id = "1lMC00LhK1HMoERpySn5BR5V0U9jLl-hf"
 output_path = "/content/datasets.zip"
 
-# Descargar dataset
+#Descargar dataset
 gdown.download(f"https://drive.google.com/uc?id={file_id}", output_path, quiet=False)
 
-# Verificar y descomprimir
+#Verificar y descomprimir
 if os.path.exists(output_path) and os.path.getsize(output_path) > 1000:
     print("✅ Archivo descargado con éxito. Procediendo a descomprimir...")
     !unzip -q "/content/datasets.zip" -d "/content/datasets"
 else:
     print("❌ Error en la descarga. Verifica el enlace.")
-🔹 4. Validación de Etiquetas
-python
-Copy
-Edit
+
+#Validación de Etiquetas
 label_paths = ["/content/datasets/datasets/labels/train", "/content/datasets/datasets/labels/val"]
 
 for path in label_paths:
@@ -60,10 +52,8 @@ for path in label_paths:
             with open(file_path, "w") as f:
                 f.writelines(new_lines)
 print("✅ Todas las etiquetas inválidas han sido corregidas.")
-🔹 5. Creación del Archivo data.yaml
-python
-Copy
-Edit
+
+#Creación del Archivo data.yaml
 data = {
     'path': './datasets',
     'train': 'images/train',
@@ -73,10 +63,8 @@ data = {
 }
 with open('/content/datasets/datasets/data.yaml', 'w') as file:
     yaml.dump(data, file, default_flow_style=False, sort_keys=False)
-🔹 6. Entrenamiento del Modelo YOLOv11
-python
-Copy
-Edit
+
+#Entrenamiento del Modelo YOLOv11
 model = YOLO("yolo11n.pt")
 results = model.train(
     data="/content/datasets/datasets/data.yaml",
@@ -88,22 +76,16 @@ results = model.train(
     optimizer="AdamW",
     patience=15
 )
-🔹 7. Evaluación del Modelo
-python
-Copy
-Edit
+
+#Evaluación del Modelo
 model_afinado = YOLO('/content/runs/detect/train/weights/best.pt')
 evaluation = model_afinado.val()
-🔹 8. Mostrar Imagen de Entrenamiento
-python
-Copy
-Edit
+
+#Mostrar Imagen de Entrenamiento
 image_path = "/content/runs/detect/train/train_batch0.jpg"
 display(Image.open(image_path))
-🔹 9. Obtener Métricas Clave
-python
-Copy
-Edit
+
+#Obtener Métricas Clave
 def print_metrics(evaluation):
     print("📊 Resultados de evaluación:")
     print(f"🔹 mAP (IoU@0.5): {evaluation.box.maps[0]:.4f}")
@@ -113,20 +95,14 @@ def print_metrics(evaluation):
     print(f"🔹 F1-score: {evaluation.box.f1.mean():.4f}")
 
 print_metrics(evaluation)
-🔹 10. Generación de Predicciones
-python
-Copy
-Edit
+
+#10. Generación de Predicciones
 preds = model_afinado('/content/datasets/datasets/images/test', conf=0.3)
-🔹 11. Mostrar Ejemplo de Predicción
-python
-Copy
-Edit
+
+#11. Mostrar Ejemplo de Predicción
 preds[11].show()
-🔹 12. Graficar Matriz de Confusión
-python
-Copy
-Edit
+
+#Graficar Matriz de Confusión
 conf_matrix = evaluation.confusion_matrix.matrix
 plt.figure(figsize=(6, 4))
 sns.heatmap(conf_matrix, annot=True, fmt=".0f", cmap="Blues", xticklabels=["Sin Casco", "Casco"], yticklabels=["Sin Casco", "Casco"])
@@ -134,10 +110,8 @@ plt.xlabel("Predicción")
 plt.ylabel("Real")
 plt.title("Matriz de Confusión")
 plt.show()
-🔹 13. Calcular y Graficar Curva ROC
-python
-Copy
-Edit
+
+#Calcular y Graficar Curva ROC
 y_true, y_scores = [], []
 for pred in preds:
     for box in pred.boxes:
@@ -160,10 +134,3 @@ if len(y_true) > 0 and len(y_scores) > 0:
     plt.show()
 else:
     print("⚠️ No se pudo generar la curva ROC debido a valores incorrectos.")
-🔹 14. Comprimir y Descargar Resultados
-python
-Copy
-Edit
-shutil.make_archive("/content/runs", "zip", "/content/runs")
-from google.colab import files
-files.download("/content/runs.zip")
