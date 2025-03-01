@@ -7,7 +7,6 @@ Esta carpeta contiene el código fuente del proyecto, incluyendo scripts de prep
 Este script descarga y prepara los datos, entrena el modelo YOLOv11 y evalúa su desempeño.
 
 ---
-
 #Instalación de Dependencias
 !pip install gdown torch ultralytics
 
