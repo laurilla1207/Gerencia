@@ -21,6 +21,6 @@ Este documento explica qué tipo de datos se pueden manejar dentro del proyecto 
 
 ### Formatos Utilizados:
 - JPG(Imagenes)
-- Txt(Etiquetas en formato YOL0).
+- Txt(Etiquetas en formato YOLO).
 - YAML(Archivo que define la estructura del dataset)
 - PT(best.pt) Modelo Yolo Entrenado
