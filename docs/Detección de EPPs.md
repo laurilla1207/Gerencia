@@ -102,7 +102,7 @@ Después de realizar el entrenamiento y validación del modelo, pudimos obtener 
 1. Predicciónes correctas:
    - 1,725 Casos fueron correctamente clasficados como "Sin Casco".
    - 4,668 Casos fueron correctamente clasificados como "Casco".
-2. Errores (Falsos positivos y falsons negativos).
+2. Errores (Falsos positivos y falsos negativos).
    - Falsos Negativos (FN)
      - 28 Personas con casco fueron clasificadas como sin casco.
      - 439 personas con casco no fueron detectadas.
@@ -120,7 +120,7 @@ Después de realizar el entrenamiento y validación del modelo, pudimos obtener 
 ![](https://drive.google.com/uc?export=view&id=1VElSG_c6x1HSaKxu9kqZkBFcHH-v_3I6)
 
 #### Análisis en curva ROC
-- El área de bajo la curba es de 0.91, esto indica que el modelo tiene un excelente desempeño para la tarea de detección de casco.
+- El área de bajo la curva es de 0.91, esto indica que el modelo tiene un excelente desempeño para la tarea de detección de casco.
 - La curva se mantiene bien alejada de la diagonal lo que confirma una buena discrimación entre clases. 
 - En la parte izquierda de la curva (Tasa de Falsos Positivos baja), el modelo mantiene una alta TPR (~0.9), lo cual es positivo.
 
@@ -130,5 +130,5 @@ No obstante, es importante mencionar ciertas áreas de oportunidad:
 - **Ampliación del Dataset:** Recoger más imágenes y situaciones distintas (entornos nocturnos, diferentes tipos de casco, industrias variadas) para robustecer la red.
 - **Optimización del Modelo:** Evaluar la implementación de versiones más ligeras de YOLO o aplicar técnicas como pruning y cuantización, especialmente para la ejecución en dispositivos de bajo rendimiento.
 - **Refinamiento en el Postprocesamiento:** Explorar algoritmos avanzados de filtrado para reducir falsos positivos, particularmente en entornos llenos de objetos similares al casco.
-- En conjunto, este proyecto sienta bases sólidas para futuros desarrollos en la intersección de la seguridad industrial y la ciencia de datos. Con la integración de analíticas más complejas y la posibilidad de desplegar el modelo en sistemas de videovigilancia en tiempo real, se abre la puerta a soluciones escalables que contribuyan al bienestar de los trabajadores y a la prevención de riesgos en el entorno laboral.
+En conjunto, este proyecto sienta bases sólidas para futuros desarrollos en la intersección de la seguridad industrial y la ciencia de datos. Con la integración de analíticas más complejas y la posibilidad de desplegar el modelo en sistemas de videovigilancia en tiempo real, se abre la puerta a soluciones escalables que contribuyan al bienestar de los trabajadores y a la prevención de riesgos en el entorno laboral.
 
