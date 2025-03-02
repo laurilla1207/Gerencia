@@ -97,6 +97,10 @@ Después de realizar el entrenamiento y validación del modelo, pudimos obtener 
 - Buen rendimiento general (la mayoría de las predicciones están en la diagonal).
 - Mejorar la detección de la clase "Casco" para reducir los falsos negativos.
 
+### Curva ROC 
+![](https://drive.google.com/uc?export=view&id=1VElSG_c6x1HSaKxu9kqZkBFcHH-v_3I6)
+
+
 ### 📊 Conclusiones y Recomendaciones
 El modelo propuesto demuestra su utilidad en la detección automatizada de empleados sin casco, lo que se traduce en un avance para la seguridad laboral y prevención de accidentes. Los resultados obtenidos, con una F1-score por encima del 90%, validan el enfoque adoptado.
 No obstante, es importante mencionar ciertas áreas de oportunidad:
