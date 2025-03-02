@@ -65,16 +65,37 @@ Después de realizar el entrenamiento y validación del modelo, pudimos obtener 
 
 | Métrica            | Valor   |
 |--------------------|--------:|
-| **Precisión**     | 0.9363  |
-| **Recall**        | 0.9155  |
-| **F1-score**      | 0.9255  |
-| **mAP (IoU@0.5)** | 0.6611  |
-| **mAP (IoU@0.5:0.95)** | 0.6547 |
+| **Precisión**     | 0.9429  |
+| **Recall**        | 0.9256  |
+| **F1-score**      | 0.9341  |
+| **mAP (IoU@0.5)** | 0.6902  |
+| **mAP (IoU@0.5:0.95)** | 0.6725 |
 
-- **Precisión:** Un 93.63% de los casos clasificados como positivos realmente pertenecen a la clase correcta.
-- **Recall:** (Sensibilidad) un 91.55% de las instancias reales positivas fueron correctamente identificadas.
-- **F1-score:** F1-score de 92.55% indica un buen equilibrio entre precisión y recall.
-- **mAP (Mean Average Precision)**: mAP de ~65% indica que hay margen de mejora en la detección y localización de objetos.
+- **Precisión:** Un 94.29% de los casos clasificados como positivos realmente pertenecen a la clase correcta.
+- **Recall:** (Sensibilidad) un 92.56% de las instancias reales positivas fueron correctamente identificadas.
+- **F1-score:** F1-score de 93.41% indica un buen equilibrio entre precisión y recall.
+- **mAP (Mean Average Precision)**: mAP de ~68% indica que hay margen de mejora en la detección y localización de objetos.
+
+### Matriz de Confusión
+![](https://drive.google.com/uc?export=view&id=1v4udIvPohGOsIBmleAI797RT5f3ghG6Q)
+
+####**Análisis matriz de confusión**
+1. Predicciónes correctas:
+   - 1,725 Casos fueron correctamente clasficados como "Sin Casco".
+   - 4,668 Casos fueron correctamente clasificados como "Casco".
+2. Errores (Falsos positivos y falsons negativos).
+   - Falsos Negativos (FN)
+     - 28 Personas con casco fueron clasificadas como sin casco.
+     - 439 personas con casco no fueron detectadas.
+   - Falsos Positivos (FP)
+     - 14 personas sin casco fueron clasificadas como si tuvieran casco.
+     - 160 personas sin casco no fueron clasificadas correctamente.
+ 3. Error más problemático
+    - El modelo comete más errores al clasificar casco como sin casco (FN = 28 y 439).
+
+####Valuable insights
+- Buen rendimiento general (la mayoría de las predicciones están en la diagonal).
+- Mejorar la detección de la clase "Casco" para reducir los falsos negativos.
 
 ### 📊 Conclusiones y Recomendaciones
 El modelo propuesto demuestra su utilidad en la detección automatizada de empleados sin casco, lo que se traduce en un avance para la seguridad laboral y prevención de accidentes. Los resultados obtenidos, con una F1-score por encima del 90%, validan el enfoque adoptado.
@@ -82,6 +103,5 @@ No obstante, es importante mencionar ciertas áreas de oportunidad:
 - **Ampliación del Dataset:** Recoger más imágenes y situaciones distintas (entornos nocturnos, diferentes tipos de casco, industrias variadas) para robustecer la red.
 - **Optimización del Modelo:** Evaluar la implementación de versiones más ligeras de YOLO o aplicar técnicas como pruning y cuantización, especialmente para la ejecución en dispositivos de bajo rendimiento.
 - **Refinamiento en el Postprocesamiento:** Explorar algoritmos avanzados de filtrado para reducir falsos positivos, particularmente en entornos llenos de objetos similares al casco.
-
 - En conjunto, este proyecto sienta bases sólidas para futuros desarrollos en la intersección de la seguridad industrial y la ciencia de datos. Con la integración de analíticas más complejas y la posibilidad de desplegar el modelo en sistemas de videovigilancia en tiempo real, se abre la puerta a soluciones escalables que contribuyan al bienestar de los trabajadores y a la prevención de riesgos en el entorno laboral.
 
