@@ -79,7 +79,7 @@ Después de realizar el entrenamiento y validación del modelo, pudimos obtener 
 ### Matriz de Confusión
 ![](https://drive.google.com/uc?export=view&id=1v4udIvPohGOsIBmleAI797RT5f3ghG6Q)
 
-####**Análisis matriz de confusión**
+###**Análisis matriz de confusión**
 1. Predicciónes correctas:
    - 1,725 Casos fueron correctamente clasficados como "Sin Casco".
    - 4,668 Casos fueron correctamente clasificados como "Casco".
@@ -93,7 +93,7 @@ Después de realizar el entrenamiento y validación del modelo, pudimos obtener 
  3. Error más problemático
     - El modelo comete más errores al clasificar casco como sin casco (FN = 28 y 439).
 
-####Valuable insights
+###Valuable insights
 - Buen rendimiento general (la mayoría de las predicciones están en la diagonal).
 - Mejorar la detección de la clase "Casco" para reducir los falsos negativos.
 
