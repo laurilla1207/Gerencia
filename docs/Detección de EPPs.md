@@ -59,8 +59,23 @@ Para ver en tiempo real:
 | R4 | Alto tiempo de inferencia en dispositivos de baja potencia | Media | Media | Optimizar el modelo con técnicas de cuantización y reducir tamaño de red. |
 | R5 | Detección errónea en entornos con objetos similares a cascos | Alta | Media | Refinar etiquetas del dataset y mejorar el postprocesamiento del modelo. |
 
-### Exploración de los datos utilizados
+### Exploración de los datos utilizados y resultados del modelo entrenado
  ![](https://drive.google.com/uc?export=view&id=1wQ9ql3OAGr0DlVPXGccENKGSRcqhBSyf)
+ 
+Luego de cargar el dataset con +5000 imágenes, se procedió a hacer la limpieza para tener la definición de clases y etiquetado, en donde se definió: 
+
+- Clase 0: "Sin casco"
+- Clase 1: "Casco"
+
+Teniendo este etiquetado y definición de clases, se procede a entrenar el modelo, en donde se ejecutan 90 épocas, posteriormente podemos ver la evaluación y comportamiento del modelo con algunas de las imagenes desiganadas para test. 
+
+#### Resultados y evaluación del modelo.
+
+ ![](https://drive.google.com/uc?export=view&id=1VjT4CJCFq29D8rz6Nz5gjySLDW3djOFL)
+ ![](https://drive.google.com/uc?export=view&id=1S-150nEyIEgkC-CP_VU7ibaT-fow7EBe)
+ ![](https://drive.google.com/uc?export=view&id=1xsaWV7zlw1Y1_juElwVeaSLGEKL-awoj)
+ ![](https://drive.google.com/uc?export=view&id=1XtS8fe4Rpx7GDlKUEsOVRDNorPYS_Ji-)
+ ![](https://drive.google.com/uc?export=view&id=18FFtQ0vZRtu4w372r3C5wbyp-iNtJnY0)
 
 
 ### 📊 Análisis de datos y Resultados
