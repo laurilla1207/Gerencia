@@ -59,6 +59,10 @@ Para ver en tiempo real:
 | R4 | Alto tiempo de inferencia en dispositivos de baja potencia | Media | Media | Optimizar el modelo con técnicas de cuantización y reducir tamaño de red. |
 | R5 | Detección errónea en entornos con objetos similares a cascos | Alta | Media | Refinar etiquetas del dataset y mejorar el postprocesamiento del modelo. |
 
+### Exploración de los datos utilizados
+ ![](https://drive.google.com/uc?export=view&id=1wQ9ql3OAGr0DlVPXGccENKGSRcqhBSyf)
+
+
 ### 📊 Análisis de datos y Resultados
 
 Después de realizar el entrenamiento y validación del modelo, pudimos obtener los siguientes resultados: 
@@ -100,6 +104,10 @@ Después de realizar el entrenamiento y validación del modelo, pudimos obtener 
 ### Curva ROC 
 ![](https://drive.google.com/uc?export=view&id=1VElSG_c6x1HSaKxu9kqZkBFcHH-v_3I6)
 
+#### Análisis en curva ROC
+- El área de bajo la curba es de 0.91, esto indica que el modelo tiene un excelente desempeño para la tarea de detección de casco.
+- La curva se mantiene bien alejada de la diagonal lo que confirma una buena discrimación entre clases. 
+- En la parte izquierda de la curva (Tasa de Falsos Positivos baja), el modelo mantiene una alta TPR (~0.9), lo cual es positivo.
 
 ### 📊 Conclusiones y Recomendaciones
 El modelo propuesto demuestra su utilidad en la detección automatizada de empleados sin casco, lo que se traduce en un avance para la seguridad laboral y prevención de accidentes. Los resultados obtenidos, con una F1-score por encima del 90%, validan el enfoque adoptado.
